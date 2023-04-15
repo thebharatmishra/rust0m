@@ -12,8 +12,16 @@
 		/>
 		<title>rustom</title>
 	</head>
-	<body>
+	<body id="body">
 		<h1>rust0m</h1>
+
+		<button
+			id="buttDnL"
+			onclick="DnL()"
+		>
+			&#9788;
+		</button>
+
 		<p>
 			Thanks for visitng my site. I will be updating things here for now
 			solve this math problem:
@@ -31,6 +39,31 @@
 			const lolo = document.getElementById('lol');
 			function haha() {
 				lolo.innerHTML = '<p>Gottem!</p>';
+			}
+
+			function toDark() {
+				document.getElementById('body').style.color = 'white';
+				document.getElementById('body').style.background = 'black';
+				document.getElementById('buttDnL').innerHTML = '&#9790;';
+			}
+			function toLight() {
+				document.getElementById('body').style.color = 'black';
+				document.getElementById('body').style.background = 'white';
+				document.getElementById('buttDnL').innerHTML = '&#9788;';
+			}
+			function DnL() {
+				// document.getElementById('buttDnL').textContent = '&#9788;'
+				// 	? toDark()
+				// 	: toLight();
+				if (
+					(document.getElementById('buttDnL').innerHTML = '&#9788;')
+				) {
+					toDark();
+				} else if (
+					(document.getElementById('buttDnL').textContent = '&#9790;')
+				) {
+					toLight();
+				}
 			}
 		</script>
 	</body>
