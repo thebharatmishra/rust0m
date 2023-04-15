@@ -25,10 +25,13 @@
 		<div id="lol">
 			<input type="text" />
 		</div>
-		<button
-			onclick="()=>{document.getElementById('lol').innerHTML='<p>Gottem!</p>'}"
-		>
-			Submit
-		</button>
+		<button onclick="haha()">Submit</button>
+
+		<script>
+			const lolo = document.getElementById('lol');
+			function haha() {
+				lolo.innerHTML = '<p>Gottem!</p>';
+			}
+		</script>
 	</body>
 </html>
