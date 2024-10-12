@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=""/>
     <title>rustom</title>
   </head>
   <body id="body">
@@ -30,6 +31,7 @@
       src="https://thebharatmishra.github.io/RunningCube"
       frameborder="0"
     ></iframe> -->
+    <p><cite>The Great Gatsby</cite> is a novel by F. Scott Fitzgerald</p>
     <hr />
     <data value="69420">Try to find the number associated with this text.</data>
     <p>
@@ -50,13 +52,19 @@
         fill="white"
       />
     </svg>
+    <p>Press <kbd>CTRL</kbd>+<kbd>C</kbd> to Copy.</p>
+
     <figure>
       <img
         src="https://www.wwe.com/f/styles/og_image/public/playlist/thumb/2014/08/20140826_CenaMonstrousAA.jpg"
         alt="You Can't See Me."
+        usemap="#planetmap"
       />
+      <map name="planetmap"><area shape="rect" coords="34,44,270,350" href="#"></area></map>
       <figcaption>John Cena #NeverGiveUp #RiseAboveHate</figcaption>
     </figure>
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+    <ol><li>Como Estas</li><li>Soy</li></ol>
     <form action="url" method="get">
       <label for="username">Username</label>
       <input
@@ -71,6 +79,39 @@
       <input type="checkbox" name="subscribe" id="subscribe" />
       <input type="submit" value="Submit" />
     </form>
+    <div class="container">
+      <p>A p tag inside a div container with a class container</p>
+    </div>
+    <center>Hello World</center>
+    <object
+      data="https://upload.wikimedia.org/wikipedia/commons/transcoded/2/2e/Badger_collecting_bedding_material.webm/Badger_collecting_bedding_material.webm.480p.vp9.webm"
+      type="video/webm"
+      width="600"
+      height="400"
+    ></object>
+    <picture>
+    <source media="(min-width:800px)" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Dollarnote_siegel_hq.jpg/595px-Dollarnote_siegel_hq.jpg?20240326174104"/>
+    <source media="(min-width:400px)" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Santu%C3%A1rio_Nacional_20161110_%28cropped%29.jpg/500px-Santu%C3%A1rio_Nacional_20161110_%28cropped%29.jpg"/>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Among_Us_%2852555030337%29.jpg/640px-Among_Us_%2852555030337%29.jpg" alt="susy image"/>
+    </picture>
+<strike>This element is struck through.</strike>
+<del>This element is the replacement for strike.</del>
+    <select name="Edibles" id="edible">
+    <optgroup label="Fruits">
+    <option selected value='apple'>Apple</option>
+    <option value='banana'>Banana</option>
+    <option value='orange'>Orange</option>
+    </optgroup>
+     <optgroup label="Vegetables">
+    <option value='carrot'>Carrot</option>
+    <option value='broccoli'>Broccoli</option>
+    <option disabled value='brinjal'>Brinjal</option>
+    </optgroup>
+    </select>
+    <p>This is some <em>sassy</em> text.</p>
+    <p>This is a very long word that might need a <wbr>break</p>
+<p>In C++ this is how <code>cout&lt;&lt;"Hello World"</code> you print a string.</p>
+<p>H<sub>2</sub>O is the chemical formula for water.</p>
     <p>
       Thanks for visitng my site. I will be updating things here for now solve
       this math problem:
@@ -80,6 +121,7 @@
       for a flight, What is the speed of light:
     </p>
     <progress id="progress" max="100" value="40">40%</progress>
+    <math><msup><mi>x</mi><mn>2</mn></msup></math>
     <table border="1">
       <caption>
         Company Contacts
@@ -94,6 +136,7 @@
       </thead>
       <tbody>
         <tr>
+          <colgroup span="2"></colgroup>
           <td>Bharat Mishra</td>
           <td>John Cena</td>
           <td>Conor McGregor</td>
@@ -116,6 +159,9 @@
       <input type="text" />
     </div>
     <button onclick="haha()">Submit</button>
+    <p>This one is <i>sassy</i> too.</p>
+    <u>VERY VERY IMPORTANT SENTENCE.</u>
+    <i><u>VERY VERY IMPORTANT SENTENCE BUT SASSY.</u></i>
     <blockquote cite="https://en.wikipedia.org/wiki/Backshot">
       <ul>
         <strong>Backshot </strong
@@ -129,6 +175,9 @@
         <li>A slang term for doggy style sex</li>
       </ul>
     </blockquote>
+
+    <footer><p>&copy; 2024 All rights reserved rust0m</p></footer>
+
     <script>
       const lolo = document.getElementById("lol");
       function haha() {
@@ -157,6 +206,12 @@
           toLight();
         }
       }
+
+
+      var canvas = document.getElementById("myCanvas")
+      var ctx= canvas.getContext("2d")
+      ctx.fillStyle="pink";
+      ctx.fillRect(20,20,150,150)
     </script>
   </body>
 </html>
