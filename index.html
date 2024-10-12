@@ -1,70 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			http-equiv="X-UA-Compatible"
-			content="IE=edge"
-		/>
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>rustom</title>
-	</head>
-	<body id="body">
-		<h1>rust0m</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rustom</title>
+  </head>
+  <body id="body">
+    <marquee direction="left" scrollamount="5" bgcolor="grey"
+      >I discovered marquee after a long time and I feel really dumb.</marquee
+    >
+    <button id="buttDnL" onclick="DnL()">&#9788;</button>
+    <h1>rust0m</h1>
+    <h2>Breaking News</h2>
+    <h3>Learning HTML</h3>
+    <h4>This is literally the p tag with bold letters</h4>
+    <h5>
+      So hr is self closing and it should be used this way. Also h5 sucks as
+      much as h6
+    </h5>
+    <h6>
+      I used h6 for this one. why is it smaller than the paragraph font lol.
+    </h6>
+    <header>
+      I CREATED A GAME BY WATCHING A TUTORIAL VIDEO PLEASE CHECK THIS OUT ASAP.
+    </header>
+    <!-- <label for="me">Search here:</label>
+    <iframe
+      src="https://thebharatmishra.github.io/RunningCube"
+      frameborder="0"
+    ></iframe> -->
+    <hr />
+    <data value="69420">Try to find the number associated with this text.</data>
+    <p>
+      This is an example of superscript, E=mc<sup>2</sup> and i feel like its
+      <span
+        >This one right <br />
+        here is span
+      </span>
+      really cool
+    </p>
+    <svg width="100" height="100">
+      <circle
+        cx="50"
+        cy="50"
+        r="40"
+        stroke="orange"
+        stroke-width="4"
+        fill="white"
+      />
+    </svg>
+    <figure>
+      <img
+        src="https://www.wwe.com/f/styles/og_image/public/playlist/thumb/2014/08/20140826_CenaMonstrousAA.jpg"
+        alt="You Can't See Me."
+      />
+      <figcaption>John Cena #NeverGiveUp #RiseAboveHate</figcaption>
+    </figure>
+    <form action="url" method="get">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Enter your username"
+      />
+      <label for="comment">Your thoughts</label>
+      <textarea name="comment" id="comment">I like your work</textarea>
+      <label for="subscribe">Subscribe to Newsletter</label>
+      <input type="checkbox" name="subscribe" id="subscribe" />
+      <input type="submit" value="Submit" />
+    </form>
+    <p>
+      Thanks for visitng my site. I will be updating things here for now solve
+      this math problem:
+    </p>
+    <p>
+      Q: If adam have 3 apples and steve have to wake up at 6:00 in the morning
+      for a flight, What is the speed of light:
+    </p>
+    <progress id="progress" max="100" value="40">40%</progress>
+    <table border="1">
+      <caption>
+        Company Contacts
+      </caption>
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Contacts</th>
+          <th>Country</th>
+          <th>Places</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bharat Mishra</td>
+          <td>John Cena</td>
+          <td>Conor McGregor</td>
+          <td>Jon Jones</td>
+        </tr>
+        <tr>
+          <td>Kanye West</td>
+          <td>Nikki Bella</td>
+          <td>Bhagat Singh</td>
+          <td>Narendra Modi</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Total Names Listed: 8</td>
+        </tr>
+      </tfoot>
+    </table>
+    <div id="lol">
+      <input type="text" />
+    </div>
+    <button onclick="haha()">Submit</button>
+    <blockquote cite="https://en.wikipedia.org/wiki/Backshot">
+      <ul>
+        <strong>Backshot </strong
+        >may refer to:
+        <li>Backshot wheel, a type of water wheel</li>
+        <li>Backshot, novel by George G. Gilman</li>
+        <li>
+          Backshot, a novel by David Sherman and Dan Cragg in the StarFist:
+          Force Recon series
+        </li>
+        <li>A slang term for doggy style sex</li>
+      </ul>
+    </blockquote>
+    <script>
+      const lolo = document.getElementById("lol");
+      function haha() {
+        lolo.innerHTML = "<p>Gottem!</p>";
+      }
 
-		<button
-			id="buttDnL"
-			onclick="DnL()"
-		>
-			&#9788;
-		</button>
-
-		<p>
-			Thanks for visitng my site. I will be updating things here for now
-			solve this math problem:
-		</p>
-		<p>
-			Q: If adam have 3 apples and steve have to wake up at 6:00 in the
-			morning for a flight, What is the speed of light:
-		</p>
-		<div id="lol">
-			<input type="text" />
-		</div>
-		<button onclick="haha()">Submit</button>
-
-		<script>
-			const lolo = document.getElementById('lol');
-			function haha() {
-				lolo.innerHTML = '<p>Gottem!</p>';
-			}
-
-			function toDark() {
-				document.getElementById('body').style.color = 'white';
-				document.getElementById('body').style.background = 'black';
-				document.getElementById('buttDnL').innerHTML = '&#9790;';
-			}
-			function toLight() {
-				document.getElementById('body').style.color = 'black';
-				document.getElementById('body').style.background = 'white';
-				document.getElementById('buttDnL').innerHTML = '&#9788;';
-			}
-			function DnL() {
-				// document.getElementById('buttDnL').textContent = '&#9788;'
-				// 	? toDark()
-				// 	: toLight();
-				if (
-					(document.getElementById('buttDnL').innerHTML = '&#9788;')
-				) {
-					toDark();
-				} else if (
-					(document.getElementById('buttDnL').textContent = '&#9790;')
-				) {
-					toLight();
-				}
-			}
-		</script>
-	</body>
+      function toDark() {
+        document.getElementById("body").style.color = "white";
+        document.getElementById("body").style.background = "black";
+        document.getElementById("buttDnL").innerHTML = "&#9790;";
+      }
+      function toLight() {
+        document.getElementById("body").style.color = "black";
+        document.getElementById("body").style.background = "white";
+        document.getElementById("buttDnL").innerHTML = "&#9788;";
+      }
+      function DnL() {
+        // document.getElementById('buttDnL').textContent = '&#9788;'
+        // 	? toDark()
+        // 	: toLight();
+        if ((document.getElementById("buttDnL").innerHTML = "&#9788;")) {
+          toDark();
+        } else if (
+          (document.getElementById("buttDnL").textContent = "&#9790;")
+        ) {
+          toLight();
+        }
+      }
+    </script>
+  </body>
 </html>
